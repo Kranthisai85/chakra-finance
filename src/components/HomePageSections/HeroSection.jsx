@@ -26,7 +26,7 @@ export default function HeroSection() {
         {/* LEFT CONTENT */}
         <div className="flex-1 text-white text-center lg:text-left">
 
-          <p className="text-orange-400 text-lg sm:text-xl lg:text-2xl font-semibold mb-3 mt-6 lg:mt-0">
+          <p className="text-orange-400 text-lg sm:text-xl lg:text-2xl font-semibold mb-3 mt-6 lg:mt-5">
             Trusted Financial Advisors
           </p>
 

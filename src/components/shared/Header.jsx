@@ -96,7 +96,7 @@
 //             >
 //               {item.label}
 //             </Link>
-//           ))} 
+//           ))}
 
 //           <Link
 //             href="/contact"
@@ -128,20 +128,19 @@ export default function Header() {
     { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Clients", href: "/#clients" },
-    { label: "Blog", href: "/Blog" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-xl border-b border-gray-100">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10">
-
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/Images/logo.png"
             alt="Chakra Financial Services"
-            width={200}
-            height={80}
+            width={170}
+            height={60}
             priority
             className="h-auto w-auto object-contain"
           />
@@ -164,9 +163,7 @@ export default function Header() {
               {/* Animated underline */}
               <span
                 className={`absolute left-0 -bottom-1 h-[2px] bg-[#F47C20] transition-all duration-300 ${
-                  pathname === item.href
-                    ? "w-full"
-                    : "w-0 group-hover:w-full"
+                  pathname === item.href ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
             </Link>
@@ -214,7 +211,7 @@ export default function Header() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-4 text-center px-6 py-3 rounded-full bg-[#F47C20] text-white font-semibold"
+            className="mt-4 text-center px-6  rounded-full bg-[#F47C20] text-white font-semibold"
           >
             Contact Us
           </Link>
